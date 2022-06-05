@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>productoR</servlet-name>
+        <servlet-class>controlador.productoR</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>categoriaR</servlet-name>
+        <servlet-class>controlador.categoriaR</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>actualizar</servlet-name>
+        <servlet-class>controlador.actualizarC</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>productoR</servlet-name>
+        <url-pattern>/productoR.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>categoriaR</servlet-name>
+        <url-pattern>/categoriaR.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>actualizar</servlet-name>
+        <url-pattern>/actualizar.do</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
