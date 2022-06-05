@@ -1,0 +1,21 @@
+CREATE DATABASE bd_inventario;
+
+USE bd_inventario;
+
+CREATE TABLE tb_producto (
+ id_producto int(9) DEFAULT NULL, 
+nom_producto VARCHAR(50) DEFAULT NULL, 
+des_producto VARCHAR(90) DEFAULT NULL, 
+stock double (3.2) DEFAULT NULL, 
+precio double(3.2) DEFAULT NULL, 
+unidad_de_medida VARCHAR(20) DEFAULT NULL, 
+estado_producto int(5) DEFAULT NULL, 
+categoria int(5) DEFAULT NULL, 
+fecha_entrada VARCHAR(10) DEFAULT NULL, 
+PRIMARY KEY(id_producto))
+
+CREATE TABLE tb_categoria ( 
+id_categoria int(10) DEFAULT NULL, 
+nom_categoria VARCHAR(50) DEFAULT NULL, 
+estado_categoria int(15) DEFAULT NULL,
+ PRIMARY KEY(id_categoria))
